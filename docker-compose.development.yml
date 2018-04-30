@@ -1,0 +1,10 @@
+#version: '3.5'
+
+services:
+  db:
+    ports:
+      - 6614:3306
+
+  t3:
+    ports:
+      - 8010:80
