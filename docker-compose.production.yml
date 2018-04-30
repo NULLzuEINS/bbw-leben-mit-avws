@@ -1,0 +1,14 @@
+version: '3.5'
+
+services:
+  t3:
+    environment:
+      - VIRTUAL_HOST=${DOMAINS}
+      - VIRTUAL_NETWORK=${NETWORK}
+      - LETSENCRYPT_HOST=${DOMAINS}
+      - LETSENCRYPT_EMAIL
+
+networks:
+  default:
+    external:
+      name: ${NETWORK}

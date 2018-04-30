@@ -1,5 +1,25 @@
 # bbw
 
+## Usage
+
+```
+cp .env.sample .env
+```
+
+**Development**
+
+```
+docker-compose -f docker-compose.yml -f docker-compose.development.yml up -d
+```
+
+**Production**
+
+```
+docker network create webproxy
+docker-compose -f docker-compose.yml -f docker-compose.production.yml up -d
+
+```
+
 ## Deployment
 
 ```

@@ -8,27 +8,15 @@ services:
       - MYSQL_USER
       - MYSQL_PASSWORD
     volumes:
-      - ./data/mysql:/var/lib/mysql:delegated
+     - ./data/mysql:/var/lib/mysql:delegated
     restart: on-failure
 
   t3:
-    image: martinhelmich/typo3
+    image: vergissberlin/typo3
     links:
       - db
-    environment:
-      - VIRTUAL_HOST=${DOMAINS}
-      - VIRTUAL_NETWORK=${NETWORK}
-      - LETSENCRYPT_HOST=${DOMAINS}
-      - LETSENCRYPT_EMAIL
+    depends_on:
+      - db
     volumes:
-      - ./data/web/fileadmin:/var/html/www/fileadmin:delegated
-      - ./data/web/typo3conf:/var/html/www/typo3conf:delegated
-      - ./data/web/uploads:/var/html/www/uploads:delegated
+      - ./data/web/typo3conf:/var/www/html/typo3conf:delegated
     restart: on-failure
-
-
-
-networks:
-  default:
-    external:
-      name: ${NETWORK}
