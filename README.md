@@ -20,6 +20,13 @@ docker-compose -f docker-compose.yml -f docker-compose.production.yml up -d
 
 ```
 
+**Both**
+
+```
+docker-compose -f docker-compose.yml -f docker-compose.development.yml -f docker-compose.production.yml up -d
+
+```
+
 ## Deployment
 
 ```

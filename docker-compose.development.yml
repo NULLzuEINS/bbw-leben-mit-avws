@@ -8,4 +8,5 @@ services:
   t3:
     ports:
       - 8010:80
-
+    volumes:
+      - ./data/template:/var/www/template

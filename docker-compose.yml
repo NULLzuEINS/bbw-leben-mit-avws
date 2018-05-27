@@ -12,11 +12,9 @@ services:
     restart: on-failure
 
   t3:
-    image: vergissberlin/typo3
+    image: martinhelmich/typo3
     links:
       - db
     depends_on:
       - db
-    volumes:
-      - ./data/web/typo3conf:/var/www/html/typo3conf:delegated
     restart: on-failure

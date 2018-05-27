@@ -1,2 +1,8 @@
-.env
-/data/
+/*
+!/data/template/
+!/.env.sample
+!/.gitignore
+!/docker-compose.development.yml
+!/docker-compose.production.yml
+!/docker-compose.yml
+!/README.md
