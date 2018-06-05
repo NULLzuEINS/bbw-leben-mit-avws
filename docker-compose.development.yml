@@ -9,4 +9,4 @@ services:
     ports:
       - 8010:80
     volumes:
-      - ./data/template:/var/www/template
+      - ./template:/var/www/template
