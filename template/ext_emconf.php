@@ -1,7 +1,7 @@
 <?php
 
 /***************************************************************
- * Extension Manager/Repository config file for ext "template_package".
+ * Extension Manager/Repository config file for ext "template".
  *
  * Auto generated 27-05-2018 21:36
  *
@@ -11,15 +11,15 @@
  ***************************************************************/
 
 $EM_CONF[$_EXTKEY] = array (
-  'title' => 'Template Package',
-  'description' => 'Template package based on TYPO§ Bootstrap Package',
+  'title' => 'Template - Leben mit AVWS',
+  'description' => 'Template package based on TYPO3 Bootstrap Package',
   'category' => 'templates',
   'constraints' => 
   array (
     'depends' => 
     array (
       'typo3' => '8.7.0-9.0.99',
-      'bootstrap_package' => '8.0.0-9.0.99',
+      'bootstrap_package' => '8.0.0-9.2.99',
     ),
     'conflicts' => 
     array (

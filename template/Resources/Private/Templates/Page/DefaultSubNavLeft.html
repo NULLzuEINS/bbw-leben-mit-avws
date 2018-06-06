@@ -8,7 +8,7 @@
                 <div class="col-md-3 subnav-wrap">
                     <f:render partial="Navigation/Subnavigation" arguments="{_all}" />
                 </div>
-                <main class="col-md-9 maincontent-wrap" role="main">
+                <main class="col-md-9 maincontent-wrap" role="main" id="main">
                     <f:cObject typoscriptObjectPath="lib.t3readspeaker" />
                     <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '0'}" />
                 </main>

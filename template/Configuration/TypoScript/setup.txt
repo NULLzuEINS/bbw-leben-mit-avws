@@ -1,4 +1,8 @@
-// Language Settings
+#############################
+# LANGUAGE
+#############################
+
+# Language Settings
 config {
     sys_language_uid = 0
     sys_language_overlay = hideNonTranslated
@@ -8,9 +12,7 @@ config {
     htmlTag_setParams = lang="de" dir="ltr" class="no-js"
 }
 
-#############################
-#### LANGUAGE CONDITIONS ####
-#############################
+# Language conditions
 [globalVar = GP:L = 1]
     config {
         sys_language_uid = 1
@@ -28,6 +30,8 @@ config {
     }
 [global]
 
+
+# Language menu
 # https://docs.typo3.org/typo3cms/FrontendLocalizationGuide/LanguageMenu/Index.html
 lib.languageMenu = HMENU
 lib.languageMenu {

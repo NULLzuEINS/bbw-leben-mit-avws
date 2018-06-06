@@ -1,0 +1,40 @@
+
+############################################################
+# Bootstrap package
+############################################################
+
+page.logo.file =
+page.logo.fileInverted =
+page.theme.copyright.text = Running with <a href="http://www.typo3.org" target="_blank">TYPO3</a> and <a href="https://github.com/benjaminkott/bootstrap_package" target="_blank">Bootstrap Package</a>.
+page.theme.meta.enable = 1
+page.theme.breadcrumb = 0
+page.theme.footersection.enable = 1
+page.theme.copyright.enable = 0
+page.theme.language.languageValue = 0,1,2
+page.theme.language.enable = 0
+page.fluidtemplate.layoutRootPath = EXT:template_package/Resources/Private/Layouts/Page/
+page.fluidtemplate.partialRootPath = EXT:template_package/Resources/Private/Partials/Page/
+page.fluidtemplate.templateRootPath = EXT:template_package/Resources/Private/Templates/Page/
+page.meta.robots = no-index,no-follow
+
+plugin.bootstrap_package.settings.less.footer-bg = #5a2572
+plugin.bootstrap_package.settings.less.footer-link-color = #fff
+plugin.bootstrap_package_contentelements.header.defaultHeaderType = 3
+plugin.bootstrap_package_contentelements.preload.images = 1
+plugin.bootstrap_package.settings.cssSourceMapping = 1
+plugin.bootstrap_package.settings.less.headings-color = @brand-primary
+plugin.bootstrap_package.settings.less.section-primary-link-color = #00a0de
+plugin.bootstrap_package_contentelements.menu_thumbnail.media.height = 170m
+plugin.bootstrap_package_contentelements.menu_thumbnail.media.width = 170
+plugin.bootstrap_package.settings.less.google-webfont = Source Sans Pro
+plugin.bootstrap_package.settings.less.brand-primary = #009bdc
+
+
+############################################################
+# Plugins
+############################################################
+
+# ReadSpeaker
+plugin.tx_t3readspeaker.settings.customerid = 9079
+plugin.tx_t3readspeaker.settings.docReaderCode = bzfca
+plugin.tx_t3readspeaker.settings.defaultReadId = main
