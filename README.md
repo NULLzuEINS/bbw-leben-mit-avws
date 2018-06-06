@@ -1,5 +1,7 @@
 # bbw
 
+[![Waffle.io - Columns and their card count](https://badge.waffle.io/NULLzuEINS/bbw-leben-mit-avws.svg?columns=all)](https://waffle.io/NULLzuEINS/bbw-leben-mit-avws)
+
 ## Usage
 
 ```
