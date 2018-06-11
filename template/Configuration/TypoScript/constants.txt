@@ -10,11 +10,11 @@ page.theme.meta.enable = 1
 page.theme.breadcrumb = 0
 page.theme.footersection.enable = 1
 page.theme.copyright.enable = 0
-page.theme.language.languageValue = 0,1,2
+page.theme.language.languageValue = 0,1
 page.theme.language.enable = 0
-page.fluidtemplate.layoutRootPath = EXT:template_package/Resources/Private/Layouts/Page/
-page.fluidtemplate.partialRootPath = EXT:template_package/Resources/Private/Partials/Page/
-page.fluidtemplate.templateRootPath = EXT:template_package/Resources/Private/Templates/Page/
+page.fluidtemplate.layoutRootPath = EXT:template/Resources/Private/Layouts/Page/
+page.fluidtemplate.partialRootPath = EXT:template/Resources/Private/Partials/Page/
+page.fluidtemplate.templateRootPath = EXT:template/Resources/Private/Templates/Page/
 page.meta.robots = no-index,no-follow
 
 plugin.bootstrap_package.settings.less.footer-bg = #5a2572
