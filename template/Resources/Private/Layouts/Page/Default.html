@@ -1,24 +1,31 @@
 <f:spaceless>
-<div id="top"></div>
-<div class="body-bg{f:if(condition:settings.navigation.type, then:' body-bg-{settings.navigation.type}')}">
-
-    <a class="sr-only sr-only-focusable" href="#content">
-        <span>{f:translate(key: 'skiptomaincontent', extensionName: 'bootstrap_package')}</span>
-    </a>
-    <f:render partial="Navigation/Main" arguments="{_all}" />
-
-    <f:render partial="Navigation/Breadcrumb" arguments="{_all}" />
-
-
-    <div id="content" class="main-section">
-        <f:cObject typoscriptObjectPath="lib.languageMenuDesktop" />
-        <!--TYPO3SEARCH_begin-->
-        <f:render section="Main" />
-        <!--TYPO3SEARCH_end-->
+    <div id="top"></div>
+    <div class="navbar navbar-inverse navbar-tools">
+        <div class="container">
+            <div class="navbar-left">
+                <f:cObject typoscriptObjectPath="lib.t3readspeaker"/>
+            </div>
+            <f:cObject typoscriptObjectPath="lib.languageMenuDesktop"/>
+        </div>
     </div>
 
-    <f:render partial="Structure/Footer" arguments="{_all}" />
-    <f:render partial="Structure/ScrollTop" arguments="{_all}" />
+    <div class="body-bg{f:if(condition:settings.navigation.type, then:' body-bg-{settings.navigation.type}')}">
 
-</div>
+        <a class="sr-only sr-only-focusable" href="#content">
+            <span>{f:translate(key: 'skiptomaincontent', extensionName: 'bootstrap_package')}</span>
+        </a>
+        <f:render partial="Navigation/Main" arguments="{_all}"/>
+        <f:render partial="Navigation/Breadcrumb" arguments="{_all}"/>
+
+
+        <div id="content" class="main-section">
+            <!--TYPO3SEARCH_begin-->
+            <f:render section="Main"/>
+            <!--TYPO3SEARCH_end-->
+        </div>
+
+        <f:render partial="Structure/Footer" arguments="{_all}"/>
+        <f:render partial="Structure/ScrollTop" arguments="{_all}"/>
+
+    </div>
 </f:spaceless>
