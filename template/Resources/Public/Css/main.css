@@ -1,0 +1,42 @@
+.navbar-tools {
+  background: #5a2572;
+  border: none;
+  margin-bottom: 0px;
+  z-index: 1100;
+}
+.navbar-tools .navbar-left {
+  min-width: 500px;
+}
+.navbar-tools > div > ul > li > a {
+  line-height: 40px;
+}
+#readspeaker_button1 {
+  margin-top: 15px;
+}
+.nav.nav-sidebar li a {
+  color: #24292e;
+  font-size: 1.2em;
+}
+.nav.nav-sidebar li a:hover {
+  color: #ffffff;
+}
+.nav.nav-sidebar li.active > a {
+  background: #009bdc;
+  color: #ffffff;
+}
+.nav.nav-sidebar li.active > a:hover {
+  color: #ffffff;
+}
+@media (min-width: 992px) {
+  .section {
+    padding-bottom: 2em;
+    padding-top: 2em;
+  }
+}
+@media (min-width: 1200px) {
+  .section {
+    padding-bottom: 2em;
+    padding-top: 2em;
+  }
+}
+/*# sourceMappingURL=main.css.map */

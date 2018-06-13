@@ -25,39 +25,12 @@ config {
     }
 [global]
 
-# Styles
-page.CSS_inlineStyle (
-    .navbar-tools {
-        background: #24292e;
-        z-index: 1100;
-        margin-bottom: 0;
-    }
-    .navbar-tools .navbar-left {
-        min-width: 500px;
-    }
-    #readspeaker_button1 {
-        margin-top: 20px;
-    }
-    @media (min-width: 992px) {
-        .section {
-            padding-top: 2em;
-            padding-bottom: 2em
-        }
-        .navbar-header-main .navbar-brand,
-        .navbar-main > li > .navbar-text, .navbar-main > li > a {
-            line-height: 100px;
-            height: auto;
-        }
-    }
-    @media (min-width: 1200px) {
-        .section {
-            padding-top: 2em;
-            padding-bottom: 2em
-        }
-    }
-)
-
 # Libs
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:template/Configuration/TypoScript/Libs/languageMenu.typoscript">
 
 # Plugins
+
+# Final CSS
+page.includeCSS {
+    file20 = EXT:template/Resources/Public/Css/main.css
+}

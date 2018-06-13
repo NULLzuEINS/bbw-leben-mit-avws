@@ -14,7 +14,7 @@ lib.languageMenu {
             doNotLinkIt = 1
             linkWrap = <li>|</li>
 
-            stdWrap.override = Text || Deutsche Gebärdensprache || Lautunterstützte Gebärdensprache
+            stdWrap.override = Text || Deutsche Gebärdensprache
             stdWrap {
                 typolink {
                     parameter.data = page:uid
@@ -38,11 +38,15 @@ lib.languageMenuDesktop {
     10 {
         wrap = <ul class="nav navbar-nav navbar-right hidden-xs hidden-sm pull-right">|</ul>
         1 {
+            NO.stdWrap.override = <span class="glyphicon glyphicon-text-height" aria-hidden="true" title="Text" data-toggle="tooltip" data-placement="bottom"></span> || <span class="glyphicon glyphicon-eye-open" aria-hidden="true" title="Gebärdensprache" data-toggle="tooltip" data-placement="bottom"></span>
+            ACT < .NO
+            USERDEF1 < .NO
             ACT.linkWrap = <li class="active">|</li>
             USERDEF1 {
                 linkWrap = <li class="disabled">|</li>
                 stdWrap.typolink.ATagParams=class="disabled"
             }
+            USERDEF2 < .ACT
             USERDEF2 {
                 linkWrap = <li class="disabled">|</li>
                 stdWrap.typolink.ATagParams=class="disabled"

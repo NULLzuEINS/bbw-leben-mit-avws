@@ -1,0 +1,28 @@
+{
+  "name": "leben-mit-avws",
+  "version": "1.0.0",
+  "description": "[![Waffle.io - Columns and their card count](https://badge.waffle.io/NULLzuEINS/bbw-leben-mit-avws.svg?columns=all)](https://waffle.io/NULLzuEINS/bbw-leben-mit-avws)",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/lesshint template/Resources/Public/Css/",
+    "fix": "node_modules/.bin/autolesshint template/Resources/Public/Css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NULLzuEINS/bbw-leben-mit-avws.git"
+  },
+  "keywords": [
+    "template"
+  ],
+  "author": "André Lademann <andre@nullzueins.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NULLzuEINS/bbw-leben-mit-avws/issues"
+  },
+  "homepage": "https://github.com/NULLzuEINS/bbw-leben-mit-avws#readme",
+  "devDependencies": {
+    "autolesshint": "^0.2.1",
+    "less": "^3.0.4",
+    "lesshint": "^5.1.0"
+  }
+}

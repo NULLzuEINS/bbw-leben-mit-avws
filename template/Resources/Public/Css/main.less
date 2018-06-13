@@ -1,0 +1,73 @@
+@black: #24292e;
+@white: #ffffff;
+
+@brand-primary: #009bdc;
+@brand-info: #5bc0de;
+@brand-success: #5cb85c;
+@brand-danger: #d9534f;
+@brand-warning: #5a2572;
+
+
+.navbar-tools {
+  background: @brand-warning;
+  border: none;
+  margin-bottom: 0px;
+  z-index: 1100;
+
+  .navbar-left {
+    min-width: 500px;
+  }
+
+  > div {
+    > ul {
+      > li {
+        > a {
+          line-height: 40px;
+        }
+      }
+    }
+  }
+
+}
+
+#readspeaker_button1 {
+  margin-top: 15px;
+}
+
+.nav.nav-sidebar {
+  li {
+    a {
+      color: @black;
+      font-size: 1.2em;
+
+      &:hover {
+        color: @white;
+      }
+    }
+  }
+
+  li.active {
+    > a {
+      &:hover {
+        color: @white;
+      }
+      background: @brand-primary;
+      color: @white;
+    }
+  }
+}
+
+
+@media (min-width: 992px) {
+  .section {
+    padding-bottom: 2em;
+    padding-top: 2em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section {
+    padding-bottom: 2em;
+    padding-top: 2em;
+  }
+}

@@ -38,7 +38,6 @@
                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                                 <span>{mainnavigationItem.title}</span>
                                                 <b class="caret"></b>
-                                                <span class="bar"></span>
                                             </a>
                                             <ul class="dropdown-menu">
                                                 <f:for each="{mainnavigationItem.children}" as="child">
@@ -60,7 +59,6 @@
                                         <f:else>
                                             <a href="{mainnavigationItem.link}"{f:if(condition: mainnavigationItem.target, then: ' target="{mainnavigationItem.target}"')} title="{mainnavigationItem.title}">
                                                 <span>{mainnavigationItem.title}</span>
-                                                <span class="bar"></span>
                                             </a>
                                         </f:else>
                                     </f:if>
