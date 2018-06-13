@@ -33,7 +33,7 @@ plugin.bootstrap_package.settings.less. {
 # Navbar
 plugin.bootstrap_package.settings.less {
     navbar-default-link-active-color = #fff
-    navbar-default-brand-hover-bg = @brand-warning
+    navbar-default-brand-hover-bg = none
     navbar-default-brand-hover-color = #fff
     navbar-default-link-hover-bg = lighten(@brand-warning,5)
     navbar-default-link-active-bg = @brand-warning
@@ -43,7 +43,7 @@ plugin.bootstrap_package.settings.less {
 
 # Drop down
 plugin.bootstrap_package.settings.less.component-active-bg = @brand-warning
-plugin.bootstrap_package.settings.less.dropdown-link-hover-bg = darken(@brand-warning,5)
+plugin.bootstrap_package.settings.less.dropdown-link-hover-bg = lighten(@brand-warning,5)
 
 plugin.bootstrap_package.settings {
     less {
