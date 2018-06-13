@@ -8,51 +8,62 @@ page.logo.file = /fileadmin/user_upload/test/logo-example-mark.svg
 page.logo.fileInverted =
 
 # Theme
-page.theme.breadcrumb = 0
-page.theme.copyright.enable = 0
-page.theme.copyright.text = Running with <a href="http://www.typo3.org" target="_blank">TYPO3</a> and <a href="https://github.com/benjaminkott/bootstrap_package" target="_blank">Bootstrap Package</a>.
-page.theme.meta.enable = 1
-page.theme.footersection.enable = 1
-page.theme.language.languageValue = 0,1
-page.theme.language.enable = 0
-page.theme.navigationstyle = default
-
+page.theme {
+    breadcrumb = 0
+    copyright.enable = 0
+    copyright.text = Running with <a href="http://www.typo3.org" target="_blank">TYPO3</a> and <a href="https://github.com/benjaminkott/bootstrap_package" target="_blank">Bootstrap Package</a>.
+    meta.enable = 1
+    footersection.enable = 1
+    language.languageValue = 0,1
+    language.enable = 0
+    navigationstyle = default
+}
 
 page.meta.robots = no-index,no-follow
 
 # Brands
-plugin.bootstrap_package.settings.less.brand-primary = #009bdc
-plugin.bootstrap_package.settings.less.brand-info = #5bc0de
-plugin.bootstrap_package.settings.less.brand-success = #5cb85c
-plugin.bootstrap_package.settings.less.brand-danger = #d9534f
-plugin.bootstrap_package.settings.less.brand-warning = #5a2572
+plugin.bootstrap_package.settings.less. {
+    brand-primary = #009bdc
+    brand-info = #5bc0de
+    brand-success = #5cb85c
+    brand-danger = #d9534f
+    brand-warning = #5a2572
+}
 
 # Navbar
-plugin.bootstrap_package.settings.less.navbar-default-link-active-color = #fff
-plugin.bootstrap_package.settings.less.navbar-default-brand-hover-bg = @brand-warning
-plugin.bootstrap_package.settings.less.navbar-default-brand-hover-color = #fff
-plugin.bootstrap_package.settings.less.navbar-default-link-hover-bg = lighten(@brand-warning,5)
-plugin.bootstrap_package.settings.less.navbar-default-link-active-bg = @brand-warning
-plugin.bootstrap_package.settings.less.navbar-default-link-color = #24292e
-plugin.bootstrap_package.settings.less.navbar-height = 40px
+plugin.bootstrap_package.settings.less {
+    navbar-default-link-active-color = #fff
+    navbar-default-brand-hover-bg = @brand-warning
+    navbar-default-brand-hover-color = #fff
+    navbar-default-link-hover-bg = lighten(@brand-warning,5)
+    navbar-default-link-active-bg = @brand-warning
+    navbar-default-link-color = #24292e
+    navbar-height = 40px
+}
 
 # Drop down
 plugin.bootstrap_package.settings.less.component-active-bg = @brand-warning
 plugin.bootstrap_package.settings.less.dropdown-link-hover-bg = darken(@brand-warning,5)
 
-# Sidebar
-plugin.bootstrap_package.settings.less.nav-link-hover-bg = lighten(@brand-primary,5)
+plugin.bootstrap_package.settings {
+    less {
+        nav-link-hover-bg = lighten(@brand-primary,5)
+        section-primary-link-color = #00a0de
+        footer-bg = @brand-warning
+        footer-link-color = #fff
+        headings-color = @brand-primary
+        headings-font-weight = 400
+        google-webfont = Source Sans Pro
+    }
+    settings.cssSourceMapping = 1
+}
 
-plugin.bootstrap_package.settings.less.section-primary-link-color = #00a0de
-plugin.bootstrap_package.settings.less.footer-bg = @brand-warning
-plugin.bootstrap_package.settings.less.footer-link-color = #fff
-plugin.bootstrap_package.settings.less.headings-color = @brand-primary
-plugin.bootstrap_package.settings.less.google-webfont = Source Sans Pro
-plugin.bootstrap_package.settings.cssSourceMapping = 1
-plugin.bootstrap_package_contentelements.header.defaultHeaderType = 3
-plugin.bootstrap_package_contentelements.preload.images = 1
-plugin.bootstrap_package_contentelements.menu_thumbnail.media.height = 170m
-plugin.bootstrap_package_contentelements.menu_thumbnail.media.width = 170
+plugin.bootstrap_package_contentelements {
+    header.defaultHeaderType = 1
+    preload.images = 1
+    menu_thumbnail.media.height = 170m
+    menu_thumbnail.media.width = 170
+}
 
 
 ############################################################
@@ -60,13 +71,25 @@ plugin.bootstrap_package_contentelements.menu_thumbnail.media.width = 170
 ############################################################
 
 # Template
-page.fluidtemplate.layoutRootPath = EXT:template/Resources/Private/Layouts/Page/
-page.fluidtemplate.partialRootPath = EXT:template/Resources/Private/Partials/Page/
-page.fluidtemplate.templateRootPath = EXT:template/Resources/Private/Templates/Page/
-plugin.bootstrap_package {
-  view {
-         layoutRootPath = EXT:template/Resources/Private/Layouts/
-         partialRootPath = EXT:template/Resources/Private/Partials/
-         templateRootPath = EXT:template/Resources/Private/Templates/
-     }
+page.fluidtemplate {
+    layoutRootPath = EXT:template/Resources/Private/Layouts/Page/
+    partialRootPath = EXT:template/Resources/Private/Partials/Page/
+    templateRootPath = EXT:template/Resources/Private/Templates/Page/
+}
+
+plugin.bootstrap_package.view  {
+    layoutRootPath = EXT:template/Resources/Private/Layouts/
+    partialRootPath = EXT:template/Resources/Private/Partials/
+    templateRootPath = EXT:template/Resources/Private/Templates/
  }
+
+############################################################
+# Configurations
+############################################################
+
+config {
+    no_cache = 1
+    admPanel = 0
+    compressJs = 0
+    concatenateJs = 0
+}
