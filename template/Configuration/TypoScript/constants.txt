@@ -22,7 +22,7 @@ page.theme {
 page.meta.robots = no-index,no-follow
 
 # Brands
-plugin.bootstrap_package.settings.less. {
+plugin.bootstrap_package.settings.less {
     brand-primary = #009bdc
     brand-info = #5bc0de
     brand-success = #5cb85c
@@ -47,12 +47,12 @@ plugin.bootstrap_package.settings.less.dropdown-link-hover-bg = lighten(@brand-w
 
 plugin.bootstrap_package.settings {
     less {
-        nav-link-hover-bg = lighten(@brand-primary,5)
-        section-primary-link-color = #00a0de
-        footer-bg = @brand-warning
-        footer-link-color = #fff
         headings-color = @brand-primary
         headings-font-weight = 400
+        nav-link-hover-bg = lighten(@brand-warning,5)
+        section-primary-link-color = @brand-warning
+        footer-bg = @brand-warning
+        footer-link-color = #fff
         google-webfont = Source Sans Pro
     }
     settings.cssSourceMapping = 1
