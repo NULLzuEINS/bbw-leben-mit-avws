@@ -36,9 +36,9 @@ lib.languageMenuDesktop = COA
 lib.languageMenuDesktop {
     10  < lib.languageMenu
     10 {
-        wrap = <ul class="nav navbar-nav navbar-right hidden-xs hidden-sm pull-right">|</ul>
+        wrap = <ul class="nav navbar-nav navbar-right hidden-xs hidden-sm">|</ul>
         1 {
-            NO.stdWrap.override = <span class="avws avws-dgs" aria-hidden="true" title="Text" data-toggle="tooltip" data-placement="bottom"></span> || <span class="avws avws-text" aria-hidden="true" title="Gebärdensprache" data-toggle="tooltip" data-placement="bottom"></span>
+            NO.stdWrap.override = <span class="avws avws-text" aria-hidden="true" title="Text" data-toggle="tooltip" data-placement="bottom"></span> || <span class="avws avws-dgs" aria-hidden="true" title="Gebärdensprache" data-toggle="tooltip" data-placement="bottom"></span>
             ACT < .NO
             USERDEF1 < .NO
             ACT.linkWrap = <li class="active">|</li>
