@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="496px" height="496px" viewBox="-15 -88 496 496"
+	 xml:space="preserve">
+<rect x="245.469" width="218" height="35"/>
+<rect x="245.469" y="55.5" width="218" height="35"/>
+<rect x="245.469" y="110" width="218" height="35"/>
+<rect x="245.469" y="172" width="218" height="35"/>
+<rect x="245.469" y="228" width="218" height="35"/>
+<rect x="24" y="290" width="439.469" height="35"/>
+<path d="M196,0c0,23,0,46,0,69c-7.67,0-15.33,0-23,0c-5.17-16.37-0.81-36.56-11-47c-13.67,0-27.33,0-41,0c0,71.33,0,142.67,0,214
+	c3.26,8.4,15.58,7.75,27,8c2.14,4.52,0.47,12.86,1,19c-34,0-68,0-102,0c0.53-6.14-1.14-14.48,1-19c11.47,0.14,22.6-0.07,27-7
+	c0-71.33,0-142.67,0-214c-11.34-2.33-27-0.34-40-1c-11.85,7.82-7.22,32.11-12,47c-7.67,0-15.33,0-23,0V0C65,0,131,0,196,0z"/>
+</svg>

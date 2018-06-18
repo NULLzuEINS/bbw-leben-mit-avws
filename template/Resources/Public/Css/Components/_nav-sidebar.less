@@ -1,0 +1,22 @@
+.nav.nav-sidebar {
+  li {
+    a {
+      color: @black;
+      font-size: 1.2em;
+
+      &:hover {
+        color: @white;
+      }
+    }
+  }
+
+  li.active {
+    > a {
+      &:hover {
+        color: @white;
+      }
+      background: @brand-warning;
+      color: @white;
+    }
+  }
+}
